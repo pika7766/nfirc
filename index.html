@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端小測驗</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">Frontend Check</p>
+        <h1>你對網頁開發有多熟悉？</h1>
+        <p class="intro">完成 5 題測驗，看看你的前端實力。</p>
+      </header>
+
+      <section class="progress" aria-label="測驗進度">
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <span id="progressText">第 1 題／共 5 題</span>
+      </section>
+
+      <section id="quizCard" class="card" aria-live="polite">
+        <h2 id="question"></h2>
+        <div id="options" class="options"></div>
+        <button id="nextButton" class="next-button" type="button" disabled>下一題</button>
+      </section>
+
+      <section id="resultCard" class="card result" hidden>
+        <p class="eyebrow">測驗完成</p>
+        <div class="score"><span id="score">0</span><small>／5</small></div>
+        <h2 id="resultTitle"></h2>
+        <p id="resultText"></p>
+        <button id="restartButton" class="next-button" type="button">再測一次</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
